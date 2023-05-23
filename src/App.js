@@ -12,15 +12,19 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack'
 // import ContadorV2 from "./componentes/contador/ContadorV2"
 // import HomeScreen from "./componentes/HomeScreen"
 // import DetailsScreen from "./componentes/DetailsScreen"
-import Familia from "./componentes/relacao/Familia"
-import Membro from "./componentes/relacao/Membro"
+// import Familia from "./componentes/relacao/Familia"
+// import Membro from "./componentes/relacao/Membro"
 import { SafeAreaView } from "react-native-safe-area-context"
- 
+import ListaProdutos from "./componentes/produto/ListaProdutos"
+import ListaProdutoV2 from "./componentes/produto/ListaProdutoV2"
 const Stack = createNativeStackNavigator()
 
 export default () => (
-    <SafeAreaView styles={styles.TelaIniciante}>
-          <Familia>
+    <SafeAreaView style={styles.TelaIniciante}>
+      <ListaProdutoV2/>
+    {/* <ListaProdutos/> */}
+    
+          {/* <Familia>
         <Membro nome="Jorge" sobrenome="Pereiras"/>
         <Membro nome="Edinaldo" sobrenome="Pereiras"/>
         <Membro nome="Marcinho" sobrenome="Pereiras"/>
@@ -31,8 +35,9 @@ export default () => (
         <Membro nome="Fernando" sobrenome="Da Silva"/>
         <Membro nome="Jorge" sobrenome="Da Silva"/>
         <Membro nome="Marcia" sobrenome="Da Silva"/>
-    </Familia>
+    </Familia> */}
     </SafeAreaView>
+
       // <NavigationContainer>
      //  <Stack.Navigator>
     //   <Stack.Screen name="Home" component={HomeScreen}/>
@@ -60,14 +65,15 @@ export default () => (
         <MinMax min="7" max="55"/>
          <Aleatorio miny={1} maxx={100}/> */
 )
-
+ 
 // export default App
 
 const styles = StyleSheet.create({
     TelaIniciante: {
         flexGrow: 1,
-        justifyContent: "center",
-        alignItems: "center",
+        justifyContent: 'center',
+        alignItems: 'center',
+        padding: 20
     }
 })
 
