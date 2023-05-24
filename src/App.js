@@ -17,11 +17,18 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack'
 import { SafeAreaView } from "react-native-safe-area-context"
 import ListaProdutos from "./componentes/produto/ListaProdutos"
 import ListaProdutoV2 from "./componentes/produto/ListaProdutoV2"
+import Quadrado from "./componentes/layout/Quadrado"
+import FlexboxV1 from "./componentes/layout/FlexboxV1"
+import FlexboxV2 from "./componentes/layout/FlexboxV2"
+import FlexboxV3 from "./componentes/layout/FlexboxV3"
 const Stack = createNativeStackNavigator()
 
 export default () => (
     <SafeAreaView style={styles.TelaIniciante}>
-      <ListaProdutoV2/>
+      <FlexboxV3/>
+      
+
+      {/* <ListaProdutoV2/> */}
     {/* <ListaProdutos/> */}
     
           {/* <Familia>
