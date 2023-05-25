@@ -21,11 +21,14 @@ import Quadrado from "./componentes/layout/Quadrado"
 import FlexboxV1 from "./componentes/layout/FlexboxV1"
 import FlexboxV2 from "./componentes/layout/FlexboxV2"
 import FlexboxV3 from "./componentes/layout/FlexboxV3"
+import FlexboxV4 from "./componentes/layout/FlexboxV4"
+import Mega from "./componentes/mega/Mega"
+
 const Stack = createNativeStackNavigator()
 
 export default () => (
     <SafeAreaView style={styles.TelaIniciante}>
-      <FlexboxV3/>
+      <Mega qutdeNumeros={7}/>
       
 
       {/* <ListaProdutoV2/> */}
