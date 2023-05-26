@@ -23,30 +23,46 @@ import FlexboxV2 from "./componentes/layout/FlexboxV2"
 import FlexboxV3 from "./componentes/layout/FlexboxV3"
 import FlexboxV4 from "./componentes/layout/FlexboxV4"
 import Mega from "./componentes/mega/Mega"
+import Filme from "./componentes/trabalho/Filme"
+import Serie from "./componentes/trabalho/Serie"
+import HomeScreen from "./componentes/trabalho/HomeScreen"
+import FilmeScreen from "./componentes/trabalho/FilmesScreen"
+import SerieScreen from "./componentes/trabalho/SerieScreen"
 
 const Stack = createNativeStackNavigator()
 
 export default () => (
-    <SafeAreaView style={styles.TelaIniciante}>
-      <Mega qutdeNumeros={7}/>
-      
 
-      {/* <ListaProdutoV2/> */}
-    {/* <ListaProdutos/> */}
-    
-          {/* <Familia>
-        <Membro nome="Jorge" sobrenome="Pereiras"/>
-        <Membro nome="Edinaldo" sobrenome="Pereiras"/>
-        <Membro nome="Marcinho" sobrenome="Pereiras"/>
-        <Membro nome="Roberta" sobrenome="Pereiras"/>
-    </Familia>
-    <Familia>
-        <Membro nome="Lucas" sobrenome="Da Silva"/>
-        <Membro nome="Fernando" sobrenome="Da Silva"/>
-        <Membro nome="Jorge" sobrenome="Da Silva"/>
-        <Membro nome="Marcia" sobrenome="Da Silva"/>
-    </Familia> */}
-    </SafeAreaView>
+  <NavigationContainer>
+  <Stack.Navigator>
+      <Stack.Screen name="Home" component={HomeScreen}/>
+      <Stack.Screen name="Filme" component={FilmeScreen}/>
+      <Stack.Screen name="Serie" component={SerieScreen}/>
+   </Stack.Navigator>
+</NavigationContainer>
+      
+     // {/* <Filme/> /}
+     //     {/ <Mega qtdeNumero={7}/> /}
+        //     {/ <FlexboxV3/> /}
+        //     {/ <Quadrado/>
+        //     <Quadrado cor='#836FFF'/>
+        //     <Quadrado cor='#271ed6'/>
+        //     <Quadrado cor='#ebc3c0'/>
+        //     <Quadrado cor='#66e809'/> /}
+        //     {/ <ListaProdutoV2/> /}
+        //     {/ <ListaProdutos/> */} 
+    //       {/* <Familia>
+    //     <Membro nome="Jorge" sobrenome="Pereiras"/>
+    //     <Membro nome="Edinaldo" sobrenome="Pereiras"/>
+    //     <Membro nome="Marcinho" sobrenome="Pereiras"/>
+    //     <Membro nome="Roberta" sobrenome="Pereiras"/>
+    // </Familia>
+    // <Familia>
+    //     <Membro nome="Lucas" sobrenome="Da Silva"/>
+    //     <Membro nome="Fernando" sobrenome="Da Silva"/>
+    //     <Membro nome="Jorge" sobrenome="Da Silva"/>
+    //     <Membro nome="Marcia" sobrenome="Da Silva"/>
+    // </Familia> */}
 
       // <NavigationContainer>
      //  <Stack.Navigator>
